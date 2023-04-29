@@ -1,0 +1,23 @@
+package main
+
+import "fmt"
+
+func main() {
+
+	var float_value1 float32
+	var float_value2 float32
+	var answer float32
+
+	fmt.Println("Enter a Number")
+	fmt.Scanf("%g", &float_value1)
+	fmt.Println("Enter a Number to add")
+	fmt.Scanf("%g", &float_value2)
+
+	answer = calc.Add(float_value1, float_value2)
+
+	fmt.Println("Answer is", answer)
+}
+
+func add(value1, value2 float32) float32 {
+	return value1 + value2
+}
